@@ -1,3 +1,8 @@
+'''
+Please make sure your executable batch file (random_wiki_article.bat) and your chromedriver.exe are in your (current) Python Home folder
+
+'''
+
 #load webdriver function from selenium
 from selenium import webdriver
 from time import sleep
@@ -6,7 +11,7 @@ from time import sleep
 chrome_options = webdriver.ChromeOptions()
 
 #setting  up local path of chrome binary file 
-chrome_options.binary_location = "C:\\Users\\SA31\\Downloads\\dt\\Win_337026_chrome-win32\\chrome-win32\\chrome.exe"
+chrome_options.binary_location = "C:\\Users\\path\\chrome.exe" #update with your chrome.exe location
 
 #creating Chrome webdriver instance with the set chrome_options
 driver = webdriver.Chrome(chrome_options=chrome_options)
